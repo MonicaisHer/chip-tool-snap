@@ -21,9 +21,8 @@ layout:
 parts:
   chip-tool:
     plugin: matter
-    # matter-branch: v1.2.0.1 
-    # zap-version: 1
-         
+    matter-branch: "v1.2.0.1"
+    zap-version: "v2023.11.13"
     override-build: |
       craftctl default
       cd $CRAFT_PART_BUILD/matter
