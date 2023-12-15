@@ -21,8 +21,8 @@ layout:
 parts:
   chip-tool:
     plugin: matter
-    matter-tag: "master"
-    matter-zap-tag: "v2023.11.13"
+    matter-sdk-version: "master"
+    matter-zap-version: "v2023.11.13"
     override-build: |
       craftctl default
       cd $CRAFT_PART_BUILD/matter
