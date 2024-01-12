@@ -35,7 +35,6 @@ jobs:
         with:
           name: chip-tool
           snap: ${{needs.build.outputs.snap}}
-          commands: git lfs install
 
 
           
