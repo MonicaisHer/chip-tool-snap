@@ -27,9 +27,11 @@ parts:
   chip-tool:
     plugin: nil
     after: [matter-sdk]
+    build-environment:
+      - MATTER_SDK_ENV: ../../matter-sdk/build/matter_sdk_env
     override-build: |
-      cd ../../matter-sdk/build
-      source matter_sdk_env
+      # Source the Matter SDK environment variables
+      source $MATTER_SDK_ENV
 
       # Build the chip tool
       cd examples/chip-tool
