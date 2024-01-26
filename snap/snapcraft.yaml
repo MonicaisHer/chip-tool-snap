@@ -34,7 +34,7 @@ parts:
       source $MATTER_SDK_ENV
 
       # Build the chip tool
-      cd examples/chip-tool
+      cd ../../matter-sdk/build/examples/chip-tool
       gn gen out/build
       ninja -C out/build
       
